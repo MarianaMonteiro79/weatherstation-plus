@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8FC"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WeatherStation +"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/graphTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gráfico"
+            android:textSize="18sp"
+            android:paddingBottom="16dp" />
+
+        <!-- GRÁFICO -->
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- COMPARAÇÃO ENTRE PERÍODOS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:text="Comparação entre períodos"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textComparacao"
+                android:text="—"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <!-- BOTÕES DE ANÁLISE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnMediaSimples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostrar média"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnMedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostrar média móvel"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnTendencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostrar tendência"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- BOTÃO VOLTAR -->
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>
