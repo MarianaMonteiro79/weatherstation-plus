@@ -37,13 +37,15 @@ Displays the latest temperature, humidity and air quality readings.
 
 Allows the user to select the type of data and the time interval to analyse.
 
-<!-- Add screenshot here -->
+<img width="252" height="565" alt="image" src="https://github.com/user-attachments/assets/e4d39b5a-71e4-46b5-9aca-43a07145a3ab" />
+
 
 ### Charts
 
 Displays historical meteorological data through interactive charts.
 
-<!-- Add screenshot here -->
+<img width="255" height="566" alt="image" src="https://github.com/user-attachments/assets/18c6c44e-b3bf-4211-9807-60289ff8224e" />
+
 
 ## Project Context
 
